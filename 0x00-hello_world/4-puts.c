@@ -1,4 +1,4 @@
-#!/bin/bash
+#include<gstdio.h>
 /**
  * main - Entry point
  *
