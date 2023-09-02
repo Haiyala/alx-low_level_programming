@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * main - multiplies two numbers
+ * main - multiples two numbers
  * @argc: number of command line arg...
  * @argv: the array that contains the command line arg..
  * Return: (0) when successful
