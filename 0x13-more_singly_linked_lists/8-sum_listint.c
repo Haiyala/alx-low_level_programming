@@ -10,25 +10,9 @@ int sum_listint(listint_t *head)
 
 	while (head)
 	{
-		sumofnodes(head, &sum);
-		return (sum);
+		sum += head->n;
+		head = head->next;
 	}
-	return (0);
-}
-/**
- * sumofnodes - Calculate the sum of nodes in a listint_t
- * @head: A pointer to the beginning of the listint_t list
- * @sum: An integer that accumulates the sum
- * Description: This function recursively computes
- * Return: The calculated sum of nodes.
- */
-void sumofnodes(listint_t *head, int *sum)
-{
-	int n;
 
-	if (!head)
-		return;
-	n = head->n;
-	sumofnodes(head->next, sum);
-	*sum = *sum + n;
+	return (sum);
 }
