@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * print_listint - prints all the elements of a listint_t list
- * @h: constant pointer type list_t
+ * print_listint - Outputs all the elements.
+ * @h: A constant pointer to a listint_t structure
  *
- * Return: the numbers of nodes
+ * Return: The count of nodes in the linked list
  */
 size_t print_listint(const listint_t *h)
 {
