@@ -6,17 +6,14 @@
  * @index: Index of the bit to clear.
  * Returns: 1 on success, -1 on failure.
  */
+
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int x;
+	unsigned long int max = 0x01;
 
-	if (index > 63)
+	max = ~(max << index);
+	if (max == 0x00)
 		return (-1);
-
-	x = 1 << index;
-
-	if (*n & x)
-		*n ^= x;
-
+	*n &= max;
 	return (1);
 }
