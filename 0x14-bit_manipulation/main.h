@@ -4,10 +4,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/* 
+/*
  * File: main.h
- * Desc: Header with function prototypes for bit manipulation.
+ *
+ * Desc: Function prototypes for bit manipulation directory.
  */
+
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
